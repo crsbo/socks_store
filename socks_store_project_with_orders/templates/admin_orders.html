@@ -1,0 +1,11 @@
+
+<h2>الطلبات</h2>
+{% for order in orders %}
+    <div style="border:1px solid #ccc; margin:10px; padding:10px;">
+        <p><strong>المنتج:</strong> {{ order.product_name }}</p>
+        <p><strong>الاسم:</strong> {{ order.name }}</p>
+        <p><strong>العنوان:</strong> {{ order.address }}</p>
+        <p><strong>رقم الهاتف:</strong> {{ order.phone }}</p>
+        <p><strong>الواتساب:</strong> {{ order.whatsapp }}</p>
+    </div>
+{% endfor %}

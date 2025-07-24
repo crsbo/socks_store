@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>طلب المنتج</title></head>
+<body>
+    <h2>طلب المنتج</h2>
+    <form method="post">
+        <input type="hidden" name="product_name" value="{{ product_name }}">
+        الاسم: <input type="text" name="name" required><br><br>
+        العنوان: <input type="text" name="address" required><br><br>
+        رقم التواصل: <input type="text" name="phone" required><br><br>
+        رقم الواتساب: <input type="text" name="whatsapp" required><br><br>
+        <button type="submit">تأكيد الطلب</button>
+    </form>
+</body>
+</html>

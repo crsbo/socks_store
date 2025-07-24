@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>متجر الشرابات</title></head>
+<body>
+    <h1>أهلاً بك في متجر الشرابات</h1>
+    {% for product in products %}
+        <div style="border:1px solid #ccc; margin:10px; padding:10px;">
+            <img src="{{ product.image }}" width="100"><br>
+            {{ product.name }} - {{ product.price }} جنيه<br>
+            <a href="/order/{{ product.name }}">اطلب الآن</a>
+        </div>
+    {% endfor %}
+</body>
+</html>

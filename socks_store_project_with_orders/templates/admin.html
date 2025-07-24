@@ -1,0 +1,14 @@
+
+<h2>لوحة تحكم المدير</h2>
+<a href="/logout">تسجيل خروج</a>
+<form method="post" action="/admin/add">
+    <input type="text" name="name" placeholder="اسم المنتج">
+    <input type="text" name="price" placeholder="السعر">
+    <input type="text" name="image" placeholder="رابط الصورة">
+    <button type="submit">إضافة منتج</button>
+</form>
+<hr>
+<h3>كل المنتجات:</h3>
+{% for product in products %}
+    <p>{{ product.name }} - {{ product.price }} <img src="{{ product.image }}" width="50"></p>
+{% endfor %}
